@@ -39,12 +39,12 @@ body {
 }
 
 #a {
-  width: 412px;
-  height: 209.6px;
+  width: 494.4px;
+  height: 251.52px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-family: "bismark";
 }
 
@@ -54,4 +54,61 @@ h1 {
 
 nav {
   margin-bottom: 10vh;
+}
+
+#frame {
+  width: 580.8px;
+  height: 580.8px;
+}
+
+#frame + img {
+  width: 448.8px;
+  height: 448.8px;
+}
+
+/* PASTED LANG FROM MY TEST HTML/CSS */
+.image-grid {
+  display: grid;
+  grid-template: 250px / 250px;
+}
+
+.image-grid img {
+  width: 250px;
+  height: 250px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.text-color-yellow {
+  color: #cf920f;
+}
+
+#item-container {
+  height: 80vh;
+  max-height: 80vh !important;
+  overflow-y: scroll;
+}
+
+.testimage {
+  height: 250px;
+  width: 250px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.my-grid {
+  display: grid;
+  grid-template: 250px/ 250px;
+}
+
+#filters {
+  padding: 0.5rem 1rem;
+  border: 5px solid #eaca86;
+  border-radius: 15px;
+  background-color: #03032b;
+  color: white;
+}
+
+#filters:hover {
+  background-color: black;
 }
