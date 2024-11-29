@@ -14,6 +14,12 @@ Highlighted (yellow) -- EACA86
   src: url(fonts/Bismarck.otf);
 }
 
+:root {
+  --dark-blue: #03032b;
+  --darker-white: #d8cfc5;
+  --gold-yellow: #eaca86;
+}
+
 * {
   font-family: "laSignora";
 }
@@ -34,7 +40,7 @@ body {
   background-color: #03032b;
 }
 
-.nav-white ul li a {
+.nav-item a {
   color: #d8cfc5 !important;
 }
 
@@ -89,6 +95,23 @@ nav {
   overflow-y: scroll;
 }
 
+#item-container::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+#item-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#item-container::-webkit-scrollbar-thumb {
+  background-color: hsla(41, 70%, 72%, 0.5);
+  border-radius: 1rem;
+}
+
+#item-container::-webkit-scrollbar-thumb:hover {
+  background-color: hsla(41, 70%, 72%, 0.25);
+}
+
 .testimage {
   height: 250px;
   width: 250px;
@@ -101,14 +124,14 @@ nav {
   grid-template: 250px/ 250px;
 }
 
-#filters {
+#filter {
   padding: 0.5rem 1rem;
-  border: 5px solid #eaca86;
+  border: 5px solid var(--gold-yellow);
   border-radius: 15px;
-  background-color: #03032b;
+  background-color: var(--dark-blue);
   color: white;
 }
 
-#filters:hover {
+/* #filter:hover {
   background-color: black;
-}
+} */
